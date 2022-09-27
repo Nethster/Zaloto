@@ -24,14 +24,14 @@ BlankSlate is distributed under the terms of the GNU GPL
 	box-sizing: border-box;
 }
 h2 {
-	font-family: "Libre Baskerville";
+	font-family: "Libre Baskerville", serif;
 	font-weight: 400;
 	font-size: 40px;
 	line-height: 50px;
 }
 p,
 a {
-	font-family: "Montserrat";
+	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 25px;
@@ -77,13 +77,13 @@ a {
 }
 .heading-block-container {
 	background-color: #273c2c;
-	height: 30vh;
+	height: 35vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 .heading-block {
-	max-width: 70%;
+	width: 800px;
 	color: #fff;
 	display: flex;
 	flex-direction: column;
