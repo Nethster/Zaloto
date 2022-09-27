@@ -25,10 +25,16 @@ BlankSlate is distributed under the terms of the GNU GPL
 }
 h2 {
 	font-family: "Libre Baskerville";
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 50px;
 }
 p,
 a {
 	font-family: "Montserrat";
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;
 }
 
 /*index-page */
