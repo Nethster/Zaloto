@@ -77,7 +77,7 @@ a {
 }
 .heading-block-container {
 	background-color: #273c2c;
-	height: 35vh;
+	height: 40vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -101,6 +101,7 @@ a {
 .heading-link {
 	background-color: #7f9172;
 	padding: 13px 30px;
+	margin-bottom: 20px;
 }
 .heading-link a {
 	color: white;
