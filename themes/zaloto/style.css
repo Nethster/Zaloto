@@ -16,22 +16,22 @@ Text Domain: blankslate
 BlankSlate WordPress Theme © 2011-2022 TidyThemes
 BlankSlate is distributed under the terms of the GNU GPL
 */
-/* * {
+* {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-} */
+}
 
 /*index-page */
 
-.index-post-heading{
+.index-post-heading {
 	display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 80px;
+	justify-content: center;
+	text-align: center;
+	margin: 80px;
 }
 
-.index-posts{
+.index-posts {
 	width: 100%;
 	padding: 0 30px;
 	max-width: 1200px;
@@ -41,13 +41,11 @@ BlankSlate is distributed under the terms of the GNU GPL
 	grid-template-columns: repeat(3, minmax(0, 1fr));
 	justify-items: center;
 	gap: 30px;
-		
 }
 
-.index-post-image{
+.index-post-image {
 	display: grid;
 	justify-items: center;
-	
 }
 .hero-block img {
 	height: 80vh;
@@ -63,7 +61,7 @@ BlankSlate is distributed under the terms of the GNU GPL
 }
 .heading-block-container {
 	background-color: #273c2c;
-	height: 25vh;
+	height: 30vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -82,28 +80,22 @@ BlankSlate is distributed under the terms of the GNU GPL
 	height: 50vh;
 }
 
-
-.index-post-text-content{
+.index-post-text-content {
 	margin: 0 auto;
 	padding: 0 10px;
 	width: 150px;
-
 }
 
 /* single page*/
 
-.single-page-content{
+.single-page-content {
 	display: grid;
 	justify-items: center;
 	margin-top: 10rem;
 }
 
-.single-page-text{
+.single-page-text {
 	display: grid;
 	justify-items: center;
 	margin: 20px;
-	
-
 }
-
-
