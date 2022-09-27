@@ -32,6 +32,7 @@ add_theme_support('custom-logo', array(
 //nav menus
 register_nav_menus(array(
   'main-menu' => __('Main Menu', 'zaloto'),
+  'footer-menu' => __('Footer Menu', 'zaloto'),
 ));
 
 function wpb_custom_new_menu()
@@ -39,6 +40,7 @@ function wpb_custom_new_menu()
   register_nav_menu('my-custom-menu', __('My Custom Menu'));
 }
 add_action('init', 'wpb_custom_new_menu');
+
 
 
 // ACF blocks
@@ -78,8 +80,8 @@ function my_acf_init_block_types()
       'render_template'   => 'template-parts/blocks/postblock.php',
       'category'          => 'formatting',
       'icon'              => 'admin-customizer',
-      'keywords'          => array( 'postblock' ),
-  ));
+      'keywords'          => array('postblock'),
+    ));
   }
 }
 
@@ -99,7 +101,7 @@ if (function_exists('acf_add_options_page')) {
  */
 function wpdocs_custom_excerpt_length($length)
 {
-  return 20;
+  return 10;
 }
 add_filter('excerpt_length', 'wpdocs_custom_excerpt_length', 999);
 
