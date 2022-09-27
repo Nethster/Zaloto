@@ -36,3 +36,16 @@ BlankSlate is distributed under the terms of the GNU GPL
 	border-radius: 20px;
 	padding: 20px;
 }
+.hero-block img {
+	height: 80vh;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.hero-block img {
+	width: 100%;
+	height: 100%;
+}
+
