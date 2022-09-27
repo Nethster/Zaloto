@@ -32,6 +32,7 @@ add_theme_support('custom-logo', array(
 //nav menus
 register_nav_menus(array(
   'main-menu' => __('Main Menu', 'zaloto'),
+  'footer-menu' => __('Footer Menu', 'zaloto'),
 ));
 
 function wpb_custom_new_menu()
@@ -78,8 +79,8 @@ function my_acf_init_block_types()
       'render_template'   => 'template-parts/blocks/postblock.php',
       'category'          => 'formatting',
       'icon'              => 'admin-customizer',
-      'keywords'          => array( 'postblock' ),
-  ));
+      'keywords'          => array('postblock'),
+    ));
   }
 }
 
