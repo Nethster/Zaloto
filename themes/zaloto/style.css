@@ -64,4 +64,7 @@ BlankSlate is distributed under the terms of the GNU GPL
 	justify-content: center;
 	align-items: center;
 }
-
+.start-category-container {
+	background-color: #7f9172;
+	height: 50vh;
+}
