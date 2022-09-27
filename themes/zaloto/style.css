@@ -23,7 +23,7 @@ BlankSlate is distributed under the terms of the GNU GPL
 	margin: 0;
 	box-sizing: border-box;
 }
-h2 {
+h1 {
 	font-family: "Libre Baskerville", serif;
 	font-weight: 400;
 	font-size: 40px;
