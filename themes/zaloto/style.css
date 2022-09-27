@@ -31,7 +31,7 @@ h1 {
 }
 p,
 a {
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 25px;
@@ -97,7 +97,7 @@ a {
 .heading-link {
 	background-color: #7f9172;
 	padding: 13px 30px;
-	margin-bottom: 20px;
+	margin: 30px 0;
 }
 .heading-link a {
 	color: white;
