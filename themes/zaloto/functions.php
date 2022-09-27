@@ -60,6 +60,26 @@ function my_acf_init_block_types()
       'icon'              => 'welcome-view-site',
       'keywords'          => array('hero'),
     ));
+
+    acf_register_block_type(array(
+      'name'              => 'heading',
+      'title'             => __('Heading'),
+      'description'       => __('A custom heading block.'),
+      'render_template'   => 'template-parts/blocks/heading.php',
+      'category'          => 'formatting',
+      'icon'              => 'admin-customizer',
+      'keywords'          => array('heading'),
+    ));
+
+    acf_register_block_type(array(
+      'name'              => 'postblock',
+      'title'             => ('postblock'),
+      'description'       => ('A custom postblock.'),
+      'render_template'   => 'template-parts/blocks/postblock.php',
+      'category'          => 'formatting',
+      'icon'              => 'admin-customizer',
+      'keywords'          => array( 'postblock' ),
+  ));
   }
 }
 
