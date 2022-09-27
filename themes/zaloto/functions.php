@@ -41,6 +41,7 @@ function wpb_custom_new_menu()
 add_action('init', 'wpb_custom_new_menu');
 
 
+
 // ACF blocks
 
 add_action('acf/init', 'my_acf_init_block_types');
@@ -99,7 +100,7 @@ if (function_exists('acf_add_options_page')) {
  */
 function wpdocs_custom_excerpt_length($length)
 {
-  return 20;
+  return 10;
 }
 add_filter('excerpt_length', 'wpdocs_custom_excerpt_length', 999);
 
