@@ -16,22 +16,37 @@ Text Domain: blankslate
 BlankSlate WordPress Theme © 2011-2022 TidyThemes
 BlankSlate is distributed under the terms of the GNU GPL
 */
+
+/*Base styling*/
 /* * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 } */
+h1 {
+	font-family: "Libre Baskerville", serif;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 50px;
+}
+p,
+a {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;
+}
 
 /*index-page */
 
-.index-post-heading{
+.index-post-heading {
 	display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 80px;
+	justify-content: center;
+	text-align: center;
+	margin: 80px;
 }
 
-.index-posts{
+.index-posts {
 	width: 100%;
 	padding: 0 30px;
 	max-width: 1200px;
@@ -41,41 +56,157 @@ BlankSlate is distributed under the terms of the GNU GPL
 	grid-template-columns: repeat(3, minmax(0, 1fr));
 	justify-items: center;
 	gap: 30px;
-		
 }
 
-.index-post-image{
+.index-post-image {
 	display: grid;
 	justify-items: center;
-	
+}
+/* startpage */
+.hero-block img {
+	height: 80vh;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.hero-block img {
+	width: 100%;
+	height: 100%;
+}
+.heading-block-container {
+	background-color: #273c2c;
+	height: 40vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.heading-block {
+	width: 800px;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
 }
 
+.heading-block > * {
+	padding: 20px;
+}
+.heading-link {
+	background-color: #7f9172;
+	padding: 13px 30px;
+	margin: 30px 0;
+}
+.heading-link a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.product-highligt-block {
+	height: 80vh;
+	display: flex;
+}
+.product-highligt-block > figure {
+	/* min-height: 50px; */
+	width: 800px;
+	background-color: pink;
+}
 
-.index-post-text-content{
+.start-category-container {
+	background-color: #7f9172;
+	height: 50vh;
+}
+
+.has-media-on-the-right.is-stacked-on-mobile {
+	position: relative;
+}
+
+.article-container {
+	height: 40vh;
+	width: 30vw;
+	margin: 0 auto;
+}
+
+.article-small {
+	margin-bottom: 50px;
+}
+.article-heading {
+	margin-bottom: 30px;
+	font-size: 40px;
+	font-weight: 400;
+}
+.article-paragraph {
+	margin-bottom: 30px;
+}
+.read-more-btn a {
+	font-size: 14px;
+	background-color: #7f9172;
+	padding: 13px 30px;
+	text-transform: uppercase;
+}
+
+.index-post-text-content {
 	margin: 0 auto;
 	padding: 0 10px;
 	width: 150px;
-
 }
 
 /* single page*/
 
-.single-page-content{
+.single-page-content {
 	display: grid;
 	justify-items: center;
 	margin-top: 10rem;
 }
 
-.single-page-text{
+.single-page-text {
 	display: grid;
 	justify-items: center;
 	margin: 20px;
 
 }
 
+/*footer*/
+
+.footer-wrapper {
+	margin: 10px;
+	max-width: 1600px;
+	width: 100%;
+	height: auto;
+	background-color: #273c2c;
+}
+
+.footer-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+
+.footer-menus {
+	display: flex;
+	padding: 50px;
+}
+
+.footer-col1 {
+	padding-right: 50px;
+}
+
+
 .navwrapper .menu-style{
 	display: flex;
 	flex-direction: row;
 }
 
+.brand-name {
+	display: flex;
+	font-size: 30px;
+	color: #fff;
+	padding: 70px;
+}
 
+footer ul.menu {
+	list-style: none;
+}
