@@ -70,8 +70,12 @@ BlankSlate is distributed under the terms of the GNU GPL
 	display: grid;
 	justify-items: center;
 	margin: 20px;
-	
 
+}
+
+.navwrapper .menu-style{
+	display: flex;
+	flex-direction: row;
 }
 
 
