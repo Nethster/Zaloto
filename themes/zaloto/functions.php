@@ -82,6 +82,16 @@ function my_acf_init_block_types()
       'icon'              => 'admin-customizer',
       'keywords'          => array('postblock'),
     ));
+
+    acf_register_block_type(array(
+      'name'              => 'highlight',
+      'title'             => ('Highlight'),
+      'description'       => ('A custom highlight block.'),
+      'render_template'   => 'template-parts/blocks/highlight.php',
+      'category'          => 'formatting',
+      'icon'              => 'welcome-view-site',
+      'keywords'          => array('highlight'),
+    ));
   }
 }
 

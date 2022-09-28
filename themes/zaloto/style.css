@@ -104,14 +104,26 @@ a {
 	text-decoration: none;
 	text-transform: uppercase;
 }
-.product-highligt-block {
-	height: 80vh;
-	display: flex;
-}
-.product-highligt-block > figure {
-	/* min-height: 50px; */
-	width: 800px;
+
+.highlight-block-container {
 	background-color: pink;
+	display: flex;
+	height: 70vh;
+	overflow: hidden;
+}
+.highlight-image {
+	background-color: blue;
+	height: 550px;
+	width: 550px;
+	overflow: hidden;
+}
+.highlight-block {
+	background-color: grey;
+	height: 30vh;
+}
+.highlight-image img {
+}
+.highlight-link {
 }
 
 .start-category-container {
