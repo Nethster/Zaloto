@@ -92,6 +92,15 @@ function my_acf_init_block_types()
       'icon'              => 'welcome-view-site',
       'keywords'          => array('highlight'),
     ));
+    acf_register_block_type(array(
+      'name'              => 'collections',
+      'title'             => ('collections'),
+      'description'       => ('A custom collections block.'),
+      'render_template'   => 'template-parts/blocks/collections.php',
+      'category'          => 'formatting',
+      'icon'              => 'welcome-view-site',
+      'keywords'          => array('collections'),
+    ));
   }
 }
 
