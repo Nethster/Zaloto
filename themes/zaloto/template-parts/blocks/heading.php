@@ -1,8 +1,8 @@
-<div class="heading-block">
+<div class="intro-block">
     <h1><?php the_field('heading-title'); ?></h1>
     <p><?php the_field('heading-text'); ?></p>
 
-    <div class="heading-link">
+    <div class="intro-link">
         <?php
         $link = get_field('heading-link');
         if ($link) :
