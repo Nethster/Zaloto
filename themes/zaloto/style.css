@@ -24,10 +24,10 @@ BlankSlate is distributed under the terms of the GNU GPL
 <<<<<<< HEAD
 	box-sizing: border-box;
 } */
-=======
+
 	/* box-sizing: border-box; */
-}
->>>>>>> 54ab774fc9bdecca8a6f9c40e1d1eeadda4aecee
+/* } */
+
 h1 {
 	font-family: "Libre Baskerville", serif;
 	font-weight: 400;
@@ -46,10 +46,16 @@ small {
 /*index-page */
 
 .index-post-heading {
+	background-color: #273c2c;
+	height: 40vh;
 	display: flex;
+	align-items: center;
 	justify-content: center;
 	text-align: center;
-	margin: 80px;
+}
+
+.index-post-heading .heading-link{
+display: none;
 }
 
 .index-posts {
@@ -62,6 +68,12 @@ small {
 	grid-template-columns: repeat(3, minmax(0, 1fr));
 	justify-items: center;
 	gap: 30px;
+}
+
+.index-post-text-content {
+	margin: 0 auto;
+	padding: 0 10px;
+	width: 150px;
 }
 
 .index-post-image {
@@ -184,11 +196,7 @@ small {
 	text-transform: uppercase;
 }
 
-.index-post-text-content {
-	margin: 0 auto;
-	padding: 0 10px;
-	width: 150px;
-}
+
 
 /* single page*/
 
