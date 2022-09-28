@@ -21,8 +21,13 @@ BlankSlate is distributed under the terms of the GNU GPL
 /* * {
 	padding: 0;
 	margin: 0;
+<<<<<<< HEAD
 	box-sizing: border-box;
 } */
+=======
+	/* box-sizing: border-box; */
+}
+>>>>>>> 54ab774fc9bdecca8a6f9c40e1d1eeadda4aecee
 h1 {
 	font-family: "Libre Baskerville", serif;
 	font-weight: 400;
@@ -30,7 +35,8 @@ h1 {
 	line-height: 50px;
 }
 p,
-a {
+a,
+small {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 400;
 	font-size: 16px;
@@ -75,14 +81,15 @@ a {
 	width: 100%;
 	height: 100%;
 }
- .heading-block-container {
+
+.intro-block-container {
 	background-color: #273c2c;
 	height: 40vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-.heading-block {
+.intro-block {
 	width: 800px;
 	color: #fff;
 	display: flex;
@@ -91,27 +98,57 @@ a {
 	margin: 0 auto;
 } 
 
-.heading-block > * {
+.intro-block > * {
 	padding: 20px;
 }
-.heading-link {
+.intro-link {
 	background-color: #7f9172;
 	padding: 13px 30px;
 	margin: 30px 0;
 }
-.heading-link a {
+.intro-link a {
 	color: white;
 	text-decoration: none;
 	text-transform: uppercase;
 }
-.product-highligt-block {
+
+.highlight-block-container {
+	background-color: white;
 	height: 80vh;
+	overflow: hidden;
 	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
 }
-.product-highligt-block > figure {
-	/* min-height: 50px; */
-	width: 800px;
-	background-color: pink;
+.highlight-image {
+	height: 550px;
+	width: 550px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.highlight-block {
+	height: 40vh;
+	width: 40%;
+}
+.highlight-block * {
+	padding: 20px 0;
+	max-width: 80%;
+}
+.highlight-block .product_price {
+	color: #7f9172;
+}
+
+.highlight-link .highlight-button {
+	background-color: #7f9172;
+	padding: 13px 30px;
+}
+.highlight-link a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 
 .start-category-container {
