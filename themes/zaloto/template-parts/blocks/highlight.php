@@ -13,7 +13,7 @@
     <div class="highlight-block">
         <small><?php the_field('collection'); ?></small>
         <h1><?php the_field('product_title'); ?></h1>
-        <small><?php the_field('product_price'); ?></small>
+        <small class="product_price"><?php the_field('product_price'); ?></small>
         <p><?php the_field('product_description'); ?></p>
 
 
@@ -25,7 +25,7 @@
                 $link_title = $link['title'];
                 $link_target = $link['target'] ? $link['target'] : '_self';
             ?>
-                <a class="button" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+                <a class="highlight-button" href="<?php echo esc_url($link_url); ?>" target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
             <?php endif; ?>
         </div>
     </div>

@@ -21,7 +21,7 @@ BlankSlate is distributed under the terms of the GNU GPL
 * {
 	padding: 0;
 	margin: 0;
-	box-sizing: border-box;
+	/* box-sizing: border-box; */
 }
 h1 {
 	font-family: "Libre Baskerville", serif;
@@ -30,7 +30,8 @@ h1 {
 	line-height: 50px;
 }
 p,
-a {
+a,
+small {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 400;
 	font-size: 16px;
@@ -106,24 +107,42 @@ a {
 }
 
 .highlight-block-container {
-	background-color: pink;
-	display: flex;
-	height: 70vh;
+	background-color: white;
+	height: 80vh;
 	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
 }
 .highlight-image {
-	background-color: blue;
 	height: 550px;
 	width: 550px;
 	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
+
 .highlight-block {
-	background-color: grey;
-	height: 30vh;
+	height: 40vh;
+	width: 40%;
 }
-.highlight-image img {
+.highlight-block * {
+	padding: 20px 0;
+	max-width: 80%;
 }
-.highlight-link {
+.highlight-block .product_price {
+	color: #7f9172;
+}
+
+.highlight-link .highlight-button {
+	background-color: #7f9172;
+	padding: 13px 30px;
+}
+.highlight-link a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 
 .start-category-container {
