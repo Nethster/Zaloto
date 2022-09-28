@@ -175,7 +175,6 @@ a {
 	max-width: 1600px;
 	width: 100%;
 	height: auto;
-	background-color: #273c2c;
 }
 
 .footer-container {
@@ -203,7 +202,6 @@ a {
 .brand-name {
 	display: flex;
 	font-size: 30px;
-	color: #fff;
 	padding: 70px;
 }
 
