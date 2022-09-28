@@ -16,6 +16,7 @@ $content = str_replace(']]>', ']]>', $content);
 <div class="index-post-heading"> <?php echo $content; ?></div>
 
 
+
 <?php
 
 // the query show 6 post 

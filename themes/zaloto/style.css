@@ -18,11 +18,16 @@ BlankSlate is distributed under the terms of the GNU GPL
 */
 
 /*Base styling*/
-* {
+/* * {
 	padding: 0;
 	margin: 0;
+<<<<<<< HEAD
+	box-sizing: border-box;
+} */
+
 	/* box-sizing: border-box; */
-}
+/* } */
+
 h1 {
 	font-family: "Libre Baskerville", serif;
 	font-weight: 400;
@@ -41,10 +46,16 @@ small {
 /*index-page */
 
 .index-post-heading {
+	background-color: #273c2c;
+	height: 40vh;
 	display: flex;
+	align-items: center;
 	justify-content: center;
 	text-align: center;
-	margin: 80px;
+}
+
+.index-post-heading .heading-link{
+display: none;
 }
 
 .index-posts {
@@ -57,6 +68,12 @@ small {
 	grid-template-columns: repeat(3, minmax(0, 1fr));
 	justify-items: center;
 	gap: 30px;
+}
+
+.index-post-text-content {
+	margin: 0 auto;
+	padding: 0 10px;
+	width: 150px;
 }
 
 .index-post-image {
@@ -76,6 +93,7 @@ small {
 	width: 100%;
 	height: 100%;
 }
+
 .intro-block-container {
 	background-color: #273c2c;
 	height: 40vh;
@@ -90,7 +108,7 @@ small {
 	flex-direction: column;
 	align-items: center;
 	margin: 0 auto;
-}
+} 
 
 .intro-block > * {
 	padding: 20px;
@@ -178,11 +196,7 @@ small {
 	text-transform: uppercase;
 }
 
-.index-post-text-content {
-	margin: 0 auto;
-	padding: 0 10px;
-	width: 150px;
-}
+
 
 /* single page*/
 
@@ -196,6 +210,7 @@ small {
 	display: grid;
 	justify-items: center;
 	margin: 20px;
+
 }
 
 /* footer */
@@ -213,6 +228,7 @@ small {
 	justify-content: space-between;
 }
 
+
 .footer-menus {
 	display: flex;
 	padding: 50px;
@@ -220,6 +236,12 @@ small {
 
 .footer-col1 {
 	padding-right: 50px;
+}
+
+
+.navwrapper .menu-style{
+	display: flex;
+	flex-direction: row;
 }
 
 .brand-name {

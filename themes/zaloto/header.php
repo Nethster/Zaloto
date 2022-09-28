@@ -9,3 +9,8 @@
 
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
+
+
+  <div class="navwrapper">
+    <?= get_template_part('template-parts/blocks/nav'); ?>
+  </div>
