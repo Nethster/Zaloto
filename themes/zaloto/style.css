@@ -17,11 +17,29 @@ BlankSlate WordPress Theme © 2011-2022 TidyThemes
 BlankSlate is distributed under the terms of the GNU GPL
 */
 
+<<<<<<< HEAD
 /* * {
+=======
+/*Base styling*/
+* {
+>>>>>>> 65bc1d433d86e67d7f659534c2cfc7fd8ab28d18
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-} */
+}
+h1 {
+	font-family: "Libre Baskerville", serif;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 50px;
+}
+p,
+a {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;
+}
 
 /*index-page */
 
@@ -48,6 +66,90 @@ BlankSlate is distributed under the terms of the GNU GPL
 	display: grid;
 	justify-items: center;
 }
+/* startpage */
+.hero-block img {
+	height: 80vh;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.hero-block img {
+	width: 100%;
+	height: 100%;
+}
+.heading-block-container {
+	background-color: #273c2c;
+	height: 40vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.heading-block {
+	width: 800px;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.heading-block > * {
+	padding: 20px;
+}
+.heading-link {
+	background-color: #7f9172;
+	padding: 13px 30px;
+	margin: 30px 0;
+}
+.heading-link a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.product-highligt-block {
+	height: 80vh;
+	display: flex;
+}
+.product-highligt-block > figure {
+	/* min-height: 50px; */
+	width: 800px;
+	background-color: pink;
+}
+
+.start-category-container {
+	background-color: #7f9172;
+	height: 50vh;
+}
+
+.has-media-on-the-right.is-stacked-on-mobile {
+	position: relative;
+}
+
+.article-container {
+	height: 40vh;
+	width: 30vw;
+	margin: 0 auto;
+}
+
+.article-small {
+	margin-bottom: 50px;
+}
+.article-heading {
+	margin-bottom: 30px;
+	font-size: 40px;
+	font-weight: 400;
+}
+.article-paragraph {
+	margin-bottom: 30px;
+}
+.read-more-btn a {
+	font-size: 14px;
+	background-color: #7f9172;
+	padding: 13px 30px;
+	text-transform: uppercase;
+}
 
 .index-post-text-content {
 	margin: 0 auto;
@@ -67,6 +169,7 @@ BlankSlate is distributed under the terms of the GNU GPL
 	display: grid;
 	justify-items: center;
 	margin: 20px;
+<<<<<<< HEAD
 }
 
 /*footer*/
@@ -86,3 +189,6 @@ BlankSlate is distributed under the terms of the GNU GPL
 .footer-menus {
 	display: flex;
 }
+=======
+}
+>>>>>>> 65bc1d433d86e67d7f659534c2cfc7fd8ab28d18
