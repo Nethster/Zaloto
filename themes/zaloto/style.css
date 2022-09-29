@@ -18,15 +18,19 @@ BlankSlate is distributed under the terms of the GNU GPL
 */
 
 /*Base styling*/
-/* * {
+* {
 	padding: 0;
 	margin: 0;
+<<<<<<< HEAD
 <<<<<<< HEAD
 	box-sizing: border-box;
 } */
 
 /* box-sizing: border-box; */
 /* } */
+=======
+}
+>>>>>>> 3406e831be16e9b7ec9a69483bf9e9edb1dbdb8b
 
 h1 {
 	font-family: "Libre Baskerville", serif;
@@ -163,13 +167,53 @@ small {
 	text-transform: uppercase;
 }
 
-.start-category-container {
+.collections-block-container {
 	background-color: #7f9172;
-	height: 50vh;
+	color: #fff;
+	height: 100%;
+	overflow: hidden;
+	padding: 90px 120px;
+}
+.collections-block-heading {
+	width: 480px;
+	padding-bottom: 80px;
+}
+.collections-container {
+	position: relative;
+	margin: 0 auto;
+	height: 464px;
+	width: 482px;
 }
 
-.has-media-on-the-right.is-stacked-on-mobile {
-	position: relative;
+.collection-image {
+	height: 320px;
+	width: 481px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.collection-heading {
+	font-family: Montserrat;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 35px;
+	letter-spacing: 0.03em;
+	margin: 10px 0;
+}
+.collection-button {
+	position: absolute;
+	bottom: 0;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 25px;
+	letter-spacing: 0.06em;
+	margin-top: 10px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
 }
 
 .article-container {
