@@ -18,11 +18,11 @@ BlankSlate is distributed under the terms of the GNU GPL
 */
 
 /*Base styling*/
- * {
+* {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-} 
+}
 
 h1 {
 	font-family: "Libre Baskerville", serif;
@@ -64,35 +64,33 @@ small {
 	grid-template-columns: repeat(3, minmax(0, 1fr));
 	justify-items: center;
 	gap: 10px;
-	
 }
 
-.index-post-image a{
+.index-post-image a {
 	display: block;
-    position: relative;
-    overflow: hidden;
+	position: relative;
+	overflow: hidden;
 	width: 100%;
-    height: 230px;
-	
+	height: 230px;
 }
 
-.index-post-text-content a{
+.index-post-text-content a {
 	text-decoration: none;
 	color: #273c2c;
 	margin-top: 60px;
 }
 
-.index-post-image img{
+.index-post-image img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
 
 .index-post-image {
-    display: block;
-} 
+	display: block;
+}
 
-.index-post-block{
+.index-post-block {
 	border: #273c2c solid 1px;
 	max-width: 250px;
 	margin-top: 40px;
@@ -101,10 +99,7 @@ small {
 .index-post-text-content {
 	margin: 10px auto;
 	padding: 0 10px;
-	
 }
-
-
 
 /* startpage */
 .hero-block img {
@@ -217,7 +212,7 @@ small {
 }
 
 .collection-heading {
-	/* font-family: Montserrat; */
+	font-family: "Montserrat", sans-serif;
 	font-size: 24px;
 	font-weight: 600;
 	line-height: 35px;
@@ -269,10 +264,9 @@ small {
 	justify-items: center;
 	margin-top: 10rem;
 	margin-bottom: 5rem;
-
 }
 
-.single-page-img{
+.single-page-img {
 	margin-top: 5rem;
 }
 
