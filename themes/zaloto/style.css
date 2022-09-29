@@ -409,17 +409,3 @@ footer ul.menu a {
 	color: #fff;
 	text-decoration: none;
 }
-
-/* Header */
-
-/* .header-container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 20px 50px;
-}
- */
-
-.navwrapper {
-	display: flex;
-}

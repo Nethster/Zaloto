@@ -1,22 +1,19 @@
 <header>
 
-    <div class="header-container">
+    <div class="menu-wrapper">
+        <?php wp_nav_menu(array('theme_location' => "my-custom-menu")); ?>
+    </div>
 
+    <?php
+    $site_title = get_bloginfo('name');
+    $site_url = network_site_url('/')
+    ?>
 
-        <div class="menu-wrapper">
-            <?php wp_nav_menu(array('theme_location' => "my-custom-menu")); ?>
-        </div>
-
-        <?php
-        $site_title = get_bloginfo('name');
-        $site_url = network_site_url('/')
-        ?>
-
-        <div class="zaloto-logo">
-            <a href="<?php echo $site_url ?>" class="logo">
-                <h2><?php echo $site_title; ?></h2>
-            </a>
-        </div>
+    <div class="zaloto-logo">
+        <a href="<?php echo $site_url ?>" class="logo">
+            <h2><?php echo $site_title; ?></h2>
+        </a>
+    </div>
 
     <div class="cart-menu">
         <a href="http://localhost/zaloto/my-account/">My account</a>
@@ -33,9 +30,6 @@
 
     </div>
 
-        </div>
-
     </div>
-
 
 </header>
