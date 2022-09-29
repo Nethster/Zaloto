@@ -267,13 +267,13 @@ small {
 .single-page-content {
 	display: grid;
 	justify-items: center;
-	margin-top: 10rem;
+	margin-top: 5rem;
 	margin-bottom: 5rem;
 
 }
 
 .single-page-img{
-	margin-top: 5rem;
+	margin-top: 4rem;
 }
 
 .single-page-link {
@@ -281,6 +281,12 @@ small {
 	justify-items: center;
 	margin-top: 30px;
 	margin-bottom: 100px;
+}
+
+.single-page-link .page-link{
+	margin-top: 30px;
+	text-decoration: none;
+	color: #273c2c;
 }
 
 /* footer */
