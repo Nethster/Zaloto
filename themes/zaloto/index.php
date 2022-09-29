@@ -43,7 +43,7 @@ $the_query = new WP_Query(array(
 
                     <h3><strong><?php the_title() ?></strong></h3>
                     <p><?php the_excerpt() ?></p>
-                    <a href="<?php the_permalink(); ?>">Read more</a>
+                    <a href="<?php the_permalink(); ?>">READ MORE</a>
 
                 </div>
 
