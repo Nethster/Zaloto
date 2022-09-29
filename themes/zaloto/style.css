@@ -248,21 +248,32 @@ small {
 /* footer */
 
 .footer-wrapper {
-	margin: 10px;
-	max-width: 1600px;
+	background-color: #273c2c;
+	/* margin: 10px; */
+	/* max-width: 1600px; */
 	width: 100%;
 	height: auto;
+	color: #fff;
+	font-family: "Montserrat";
 }
 
 .footer-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	padding: 30px 50px 0;
 }
 
 .footer-menus {
 	display: flex;
 	padding: 50px;
+}
+
+.footer-menus h2 {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 35px;
+	letter-spacing: 0.03em;
 }
 
 .footer-col1 {
@@ -279,7 +290,18 @@ small {
 	font-size: 30px;
 	padding: 70px;
 }
+.brand-name h1 {
+	font-family: "Montserrat";
+}
 
 footer ul.menu {
 	list-style: none;
+}
+footer ul.menu > * {
+	padding-top: 10px;
+}
+
+footer ul.menu a {
+	color: #fff;
+	text-decoration: none;
 }
