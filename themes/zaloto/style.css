@@ -62,6 +62,35 @@ header .menu {
 	flex-direction: row;
 	align-items: center;
 }
+/*dropdown menu*/
+header .menu-menu-container ul ul {
+	display: none;
+}
+header .menu-menu-container ul li:hover > ul {
+	display: block;
+}
+.menu-menu-container ul ul {
+	display: none;
+	position: absolute;
+	top: 3em;
+	left: 20%;
+	z-index: 99999;
+	background: #fff;
+	min-height: 100%;
+	width: 208px;
+	border-radius: 8px;
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+}
+.menu-menu-container li {
+	position: relative;
+}
+.menu-item li a {
+	color: #273c2c;
+	padding: 20px;
+}
+.menu-item li {
+	padding: 13px;
+}
 .zaloto-logo {
 	/* background-color: lightcoral; */
 	width: 10%;
@@ -76,8 +105,12 @@ header .menu {
 	align-items: center;
 	justify-content: flex-end;
 }
-.cart-menu > * {
+.cart-icons > * {
 	margin: 0px 10px;
+}
+.cart-icons {
+	margin: 0px 10px;
+	transform: scale(0.8);
 }
 .cart-menu > a:nth-child(1) {
 	margin: 0px 60px;
