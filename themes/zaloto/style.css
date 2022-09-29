@@ -24,7 +24,6 @@ BlankSlate is distributed under the terms of the GNU GPL
 	box-sizing: border-box;
 } 
 
-
 h1 {
 	font-family: "Libre Baskerville", serif;
 	font-weight: 400;
@@ -51,8 +50,8 @@ small {
 	text-align: center;
 }
 
-.index-post-heading .heading-link{
-display: none;
+.index-post-heading .heading-link {
+	display: none;
 }
 
 .index-posts {
@@ -135,7 +134,7 @@ display: none;
 	flex-direction: column;
 	align-items: center;
 	margin: 0 auto;
-} 
+}
 
 .intro-block > * {
 	padding: 20px;
@@ -190,13 +189,53 @@ display: none;
 	text-transform: uppercase;
 }
 
-.start-category-container {
+.collections-block-container {
 	background-color: #7f9172;
-	height: 50vh;
+	color: #fff;
+	height: 100%;
+	overflow: hidden;
+	padding: 90px 120px;
+}
+.collections-block-heading {
+	width: 480px;
+	padding-bottom: 80px;
+}
+.collections-container {
+	position: relative;
+	margin: 0 auto;
+	height: 464px;
+	width: 482px;
 }
 
-.has-media-on-the-right.is-stacked-on-mobile {
-	position: relative;
+.collection-image {
+	height: 320px;
+	width: 481px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.collection-heading {
+	/* font-family: Montserrat; */
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 35px;
+	letter-spacing: 0.03em;
+	margin: 10px 0;
+}
+.collection-button {
+	position: absolute;
+	bottom: 0;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 25px;
+	letter-spacing: 0.06em;
+	margin-top: 10px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
 }
 
 .article-container {
@@ -223,8 +262,6 @@ display: none;
 	text-transform: uppercase;
 }
 
-
-
 /* single page*/
 
 .single-page-content {
@@ -242,36 +279,46 @@ display: none;
 .single-page-link {
 	display: grid;
 	justify-items: center;
-    
+	margin-top: 30px;
+	margin-bottom: 100px;
 }
 
-/*footer*/
+/* footer */
 
 .footer-wrapper {
-	margin: 10px;
-	max-width: 1600px;
+	background-color: #273c2c;
+	/* margin: 10px; */
+	/* max-width: 1600px; */
 	width: 100%;
 	height: auto;
+	color: #fff;
+	font-family: "Montserrat";
 }
 
 .footer-container {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	padding: 30px 50px 0;
 }
-
 
 .footer-menus {
 	display: flex;
 	padding: 50px;
 }
 
+.footer-menus h2 {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 35px;
+	letter-spacing: 0.03em;
+}
+
 .footer-col1 {
 	padding-right: 50px;
 }
 
-
-.navwrapper .menu-style{
+.navwrapper .menu-style {
 	display: flex;
 	flex-direction: row;
 }
@@ -281,7 +328,18 @@ display: none;
 	font-size: 30px;
 	padding: 70px;
 }
+.brand-name h1 {
+	font-family: "Montserrat";
+}
 
 footer ul.menu {
 	list-style: none;
+}
+footer ul.menu > * {
+	padding-top: 10px;
+}
+
+footer ul.menu a {
+	color: #fff;
+	text-decoration: none;
 }
