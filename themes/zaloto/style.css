@@ -21,20 +21,11 @@ BlankSlate is distributed under the terms of the GNU GPL
 * {
 	padding: 0;
 	margin: 0;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 	box-sizing: border-box;
-} */
+}
 
 /* box-sizing: border-box; */
 /* } */
-=======
-=======
-	box-sizing: border-box;
->>>>>>> b6b9fe7e25700e182cb01f5507b27c82c563dd89
-}
->>>>>>> 3406e831be16e9b7ec9a69483bf9e9edb1dbdb8b
 
 h1 {
 	font-family: "Libre Baskerville", serif;
@@ -292,13 +283,6 @@ small {
 /* footer */
 
 .footer-wrapper {
-<<<<<<< HEAD
-	margin: 10px;
-	width: 100%;
-	height: auto;
-	background-color: #273c2c;
-	color: #fff;
-=======
 	background-color: #273c2c;
 	/* margin: 10px; */
 	/* max-width: 1600px; */
@@ -306,7 +290,6 @@ small {
 	height: auto;
 	color: #fff;
 	font-family: "Montserrat";
->>>>>>> b6b9fe7e25700e182cb01f5507b27c82c563dd89
 }
 
 .footer-container {
@@ -329,11 +312,6 @@ small {
 
 .footer-col1 {
 	padding-right: 50px;
-}
-
-.navwrapper .menu-style {
-	display: flex;
-	flex-direction: row;
 }
 
 .brand-name {
@@ -361,4 +339,18 @@ footer ul.menu > * {
 footer ul.menu a {
 	color: #fff;
 	text-decoration: none;
+}
+
+/* Header */
+
+/* .header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 50px;
+}
+ */
+
+.navwrapper {
+	display: flex;
 }
