@@ -1,7 +1,7 @@
 <?php
-add_action('wp_enqueue_scripts', 'anotheremptytheme_enqueue');
+add_action('wp_enqueue_scripts', 'zaloto_enqueue');
 
-function anotheremptytheme_enqueue()
+function zaloto_enqueue()
 {
   wp_enqueue_style('style', get_stylesheet_uri());
 }
