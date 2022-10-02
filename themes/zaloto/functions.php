@@ -160,6 +160,19 @@ add_action('after_setup_theme', 'add_woocommerce_support');
 
 //custom post type for stores
 
+// unset custom post wysiwyg fields so only title and custom fields remain
+function remove_post_custom_fields()
+{
+  remove_post_type_support('stores', 'editor');
+}
+add_action('admin_init', 'remove_post_custom_fields');
+
+
+
+
+
+
+
 
 function custom_post_type()
 {

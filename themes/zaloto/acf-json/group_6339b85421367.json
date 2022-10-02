@@ -60,6 +60,25 @@
             "append": ""
         },
         {
+            "key": "field_6339d271373de",
+            "label": "Zip Code",
+            "name": "zip_code",
+            "type": "text",
+            "instructions": "Enter zip code",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "123 45",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_6339c281f6aa9",
             "label": "Monday-Thursday",
             "name": "monday-thursday",
@@ -154,5 +173,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1664731275
+    "modified": 1664733888
 }
