@@ -31,15 +31,9 @@ add_theme_support('custom-logo', array(
 
 //nav menus
 register_nav_menus(array(
-  'main-menu' => __('Main Menu', 'zaloto'),
+  'my-custom-menu', __('My Custom Menu'),
   'footer-menu' => __('Footer Menu', 'zaloto'),
 ));
-
-function wpb_custom_new_menu()
-{
-  register_nav_menu('my-custom-menu', __('My Custom Menu'));
-}
-add_action('init', 'wpb_custom_new_menu');
 
 
 
