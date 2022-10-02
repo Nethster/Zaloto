@@ -1,0 +1,158 @@
+{
+    "key": "group_6339b85421367",
+    "title": "Store",
+    "fields": [
+        {
+            "key": "field_6339c18111c38",
+            "label": "City",
+            "name": "city",
+            "type": "text",
+            "instructions": "Enter city name",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "ex: Jönköping",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6339c1c9f6aa7",
+            "label": "phone",
+            "name": "phone",
+            "type": "text",
+            "instructions": "Phone number to store.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "123 4567 8910",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6339c20af6aa8",
+            "label": "Street",
+            "name": "street",
+            "type": "text",
+            "instructions": "Street name and number",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "Vägensväg 123",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6339c281f6aa9",
+            "label": "Monday-Thursday",
+            "name": "monday-thursday",
+            "type": "text",
+            "instructions": "Opening hours during monday til thursday",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "09:00 - 19:00",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6339c2cff6aaa",
+            "label": "Friday",
+            "name": "friday",
+            "type": "text",
+            "instructions": "Opening hours for Fridays",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "09:00-21:00",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6339c2fef6aab",
+            "label": "Saturday",
+            "name": "saturday",
+            "type": "text",
+            "instructions": "Opening hours for Saturdays.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "09:00-15:00",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6339c338f6aac",
+            "label": "Sunday",
+            "name": "sunday",
+            "type": "text",
+            "instructions": "Opening hours for Sundays.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Stängt",
+            "maxlength": "",
+            "placeholder": "Closed.",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "stores"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1664731275
+}

@@ -95,6 +95,15 @@ function my_acf_init_block_types()
       'icon'              => 'welcome-view-site',
       'keywords'          => array('collections'),
     ));
+    acf_register_block_type(array(
+      'name'              => 'stores',
+      'title'             => __('Store'),
+      'description'       => __('A custom store block.'),
+      'render_template'   => 'template-parts/blocks/stores.php',
+      'category'          => 'formatting',
+      'icon'              => 'store',
+      'keywords'          => array('store'),
+    ));
   }
 }
 
@@ -147,3 +156,64 @@ function add_woocommerce_support()
 }
 
 add_action('after_setup_theme', 'add_woocommerce_support');
+
+
+//custom post type for stores
+
+
+function custom_post_type()
+{
+
+  $labels = array(
+    'name'                  => _x('Stores', 'Post Type General Name', 'text_domain'),
+    'singular_name'         => _x('Store', 'Post Type Singular Name', 'text_domain'),
+    'menu_name'             => __('Stores', 'text_domain'),
+    'name_admin_bar'        => __('Post Type', 'text_domain'),
+    'archives'              => __('Store Archives', 'text_domain'),
+    'attributes'            => __('Store Attributes', 'text_domain'),
+    'parent_item_colon'     => __('Parent Item:', 'text_domain'),
+    'all_items'             => __('All Stores', 'text_domain'),
+    'add_new_item'          => __('Add New Store', 'text_domain'),
+    'add_new'               => __('Add New Store', 'text_domain'),
+    'new_item'              => __('New Store', 'text_domain'),
+    'edit_item'             => __('Edit Store', 'text_domain'),
+    'update_item'           => __('Update Store', 'text_domain'),
+    'view_item'             => __('View Store', 'text_domain'),
+    'view_items'            => __('View Stores', 'text_domain'),
+    'search_items'          => __('Search Storee', 'text_domain'),
+    'not_found'             => __('Not found', 'text_domain'),
+    'not_found_in_trash'    => __('Not found in Trash', 'text_domain'),
+    'featured_image'        => __('Featured Image', 'text_domain'),
+    'set_featured_image'    => __('Set featured image', 'text_domain'),
+    'remove_featured_image' => __('Remove featured image', 'text_domain'),
+    'use_featured_image'    => __('Use as featured image', 'text_domain'),
+    'insert_into_item'      => __('Insert into Store', 'text_domain'),
+    'uploaded_to_this_item' => __('Uploaded to this store', 'text_domain'),
+    'items_list'            => __('Stores List', 'text_domain'),
+    'items_list_navigation' => __('Stores list navigation', 'text_domain'),
+    'filter_items_list'     => __('Filter Stores list', 'text_domain'),
+  );
+  $args = array(
+    'label'                 => __('Store', 'text_domain'),
+    'description'           => __('Adds a new store to storepage', 'text_domain'),
+    'labels'                => $labels,
+    'supports'              => array('title', 'editor', 'custom-fields'),
+    'taxonomies'            => array('category', 'post_tag'),
+    'hierarchical'          => false,
+    'public'                => true,
+    'show_ui'               => true,
+    'show_in_menu'          => true,
+    'menu_position'         => 25,
+    'menu_icon'             => 'dashicons-store',
+    'show_in_admin_bar'     => true,
+    'show_in_nav_menus'     => true,
+    'can_export'            => true,
+    'has_archive'           => true,
+    'exclude_from_search'   => false,
+    'publicly_queryable'    => true,
+    'capability_type'       => 'page',
+  );
+  register_post_type('stores', $args);
+}
+add_action('init', 'custom_post_type', 0);
+  /* Custom Post Type End */
