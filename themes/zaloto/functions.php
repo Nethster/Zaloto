@@ -131,6 +131,15 @@ function my_acf_init_block_types()
       'icon'              => 'welcome-view-site',
       'keywords'          => array('hero'),
     ));
+    acf_register_block_type(array(
+      'name'              => 'product category',
+      'title'             => __('Product category'),
+      'description'       => __('A custom product category block.'),
+      'render_template'   => 'template-parts/blocks/product-category.php',
+      'category'          => 'formatting',
+      'icon'              => 'welcome-view-site',
+      'keywords'          => array('product-category'),
+    ));
   }
 }
 
