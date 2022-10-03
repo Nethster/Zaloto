@@ -8,7 +8,7 @@
             <div class="footer-col1">
                 <h2> Navigation </h2>
 
-                <?php wp_nav_menu(array('theme_location' => 'main-menu')); ?>
+                <?php wp_nav_menu(array('theme_location' => 'my-custom-menu')); ?>
 
 
             </div>
