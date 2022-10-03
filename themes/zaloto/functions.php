@@ -38,21 +38,21 @@ register_nav_menus(array(
 
 //free shipping if you order
 
-add_action( 'woocommerce_before_cart', 'bbloomer_free_shipping_cart_notice' );
-  
-function bbloomer_free_shipping_cart_notice() {
-  
- $min_amount = 600; 
-   
-   $current = WC()->cart->subtotal;
-  
-   if ( $current < $min_amount ) {
-      $added_text = 'Get free shipping if you order ' . wc_price( $min_amount - $current ) . ' more!';
-      $return_to = wc_get_page_permalink( 'shop' );
-      $notice = sprintf( '<a href="%s" class="button wc-forward">%s</a> %s', esc_url( $return_to ), 'Continue Shopping', $added_text );
-      wc_print_notice( $notice, 'notice' );
-   }
-  
+add_action('woocommerce_before_cart', 'bbloomer_free_shipping_cart_notice');
+
+function bbloomer_free_shipping_cart_notice()
+{
+
+  $min_amount = 600;
+
+  $current = WC()->cart->subtotal;
+
+  if ($current < $min_amount) {
+    $added_text = 'Get free shipping if you order ' . wc_price($min_amount - $current) . ' more!';
+    $return_to = wc_get_page_permalink('shop');
+    $notice = sprintf('<a href="%s" class="button wc-forward">%s</a> %s', esc_url($return_to), 'Continue Shopping', $added_text);
+    wc_print_notice($notice, 'notice');
+  }
 }
 
 // ACF blocks
@@ -121,6 +121,15 @@ function my_acf_init_block_types()
       'category'          => 'formatting',
       'icon'              => 'store',
       'keywords'          => array('store'),
+    ));
+    acf_register_block_type(array(
+      'name'              => 'mini hero',
+      'title'             => __('Mini hero'),
+      'description'       => __('A custom mini hero block.'),
+      'render_template'   => 'template-parts/blocks/mini-hero.php',
+      'category'          => 'formatting',
+      'icon'              => 'welcome-view-site',
+      'keywords'          => array('hero'),
     ));
   }
 }
