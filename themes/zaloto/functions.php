@@ -31,7 +31,7 @@ add_theme_support('custom-logo', array(
 
 //nav menus
 register_nav_menus(array(
-  'my-custom-menu', __('My Custom Menu'),
+  'my-custom-menu' => __('My Custom Menu'),
   'footer-menu' => __('Footer Menu', 'zaloto'),
 ));
 
