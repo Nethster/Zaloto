@@ -37,15 +37,21 @@ small {
 	line-height: 25px;
 }
 
+body {
+	position: relative;
+}
+
 /*Navbar styling*/
 header {
-	background: #ccc; /*remove later*/
+	position: absolute;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
+	padding: 10px 0;
 }
+
 header a {
 	color: white;
 	text-decoration: none;
