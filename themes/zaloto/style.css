@@ -349,7 +349,7 @@ header .menu > * {
 	margin-bottom: 5rem;
 }
 
-.single-page-img{
+.single-page-img {
 	margin-top: 4rem;
 	margin-top: 5rem;
 }
@@ -361,10 +361,24 @@ header .menu > * {
 	margin-bottom: 100px;
 }
 
-.single-page-link .page-link{
+.single-page-link .page-link {
 	margin-top: 30px;
 	text-decoration: none;
 	color: #273c2c;
+}
+
+/* Mini hero styling */
+.mini-hero-block {
+	background-color: #ccc;
+	height: 420px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+.mini-hero-block img {
+	width: 100vw;
+	height: 100vh;
 }
 
 /* footer */
