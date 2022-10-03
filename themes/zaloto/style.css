@@ -410,7 +410,7 @@ header .menu > * {
 	width: 775px;
 	padding: 30px 0;
 }
-
+/*Suggestions styling*/
 .suggestions-block-container {
 	background-color: #7f9172;
 	color: white;
@@ -424,7 +424,7 @@ header .menu > * {
 }
 
 .suggestions-block-heading {
-	width: 480px;
+	width: 650px;
 	padding-bottom: 80px;
 }
 .suggestions-container {
@@ -435,6 +435,7 @@ header .menu > * {
 .wp-container-4.wp-block-columns.suggestions-columns {
 	gap: 10em;
 }
+
 .suggestions-image {
 	height: 320px;
 	width: 481px;
@@ -455,6 +456,63 @@ header .menu > * {
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	color: #273c2c;
+}
+/*Contact page*/
+.contact-container {
+	width: 50%;
+	display: flex;
+	margin: 0 auto;
+	flex-direction: column;
+	align-items: center;
+}
+.contact-heading {
+	padding: 50px;
+}
+
+.contact-container p {
+	padding-bottom: 50px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+/* Contact form */
+#wpforms-323 {
+	font-family: "Montserrat", sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 120px;
+}
+
+/* Input fields & Textarea */
+#wpforms-323-field_0,
+#wpforms-323-field_2,
+#wpforms-323-field_1-container input {
+	background: #fcfcfc;
+	border: 1px solid #d9d9d9;
+	border-radius: 5px;
+	padding: 25px;
+}
+div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
+	height: 150px;
+	padding: 35px;
+}
+
+/* Submit btn */
+#wpforms-submit-323 {
+	height: 37px;
+	width: 161px;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 14px;
+	color: #ffffff;
+	background: #7f9172;
+	float: right;
+}
+
+.wp-container-6.wp-block-columns.suggestions-columns {
+	gap: 10em;
 }
 
 /* footer */

@@ -3,7 +3,7 @@ get_header();
 
 
 ?>
-<div class="page-content">
+<div class="contact-page-content">
     <?php the_content(); ?>
 </div>
 
