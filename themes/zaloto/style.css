@@ -39,6 +39,9 @@ small {
 
 body {
 	position: relative;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
 /*Navbar styling*/
@@ -396,6 +399,9 @@ header .menu > * {
 }
 .brand-name h1 {
 	font-family: "Montserrat", sans-serif;
+}
+footer {
+	margin-top: auto;
 }
 
 footer ul.menu {
