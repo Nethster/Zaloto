@@ -13,7 +13,7 @@
     <div class="highlight-block">
         <small><?php the_field('collection'); ?></small>
         <h1><?php the_field('product_title'); ?></h1>
-        <small class="product_price"><?php the_field('product_price'); ?></small>
+        <small class="highlight_product_price"><?php the_field('product_price'); ?></small>
         <p><?php the_field('product_description'); ?></p>
 
 

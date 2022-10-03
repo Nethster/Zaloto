@@ -259,7 +259,7 @@ header .menu > * {
 	padding: 20px 0;
 	max-width: 80%;
 }
-.highlight-block .product_price {
+.highlight-block .highlight_product_price {
 	color: #7f9172;
 }
 
@@ -280,7 +280,7 @@ header .menu > * {
 	overflow: hidden;
 	padding: 90px 120px;
 }
-.collections-block-heading {
+.block-heading {
 	width: 480px;
 	padding-bottom: 80px;
 }
@@ -411,7 +411,86 @@ header .menu > * {
 	padding: 30px 0;
 }
 
+.suggestions-block-container {
+	background-color: #7f9172;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
 
+.suggestions-block-heading {
+	width: 480px;
+	padding-bottom: 80px;
+}
+.suggestions-container {
+	margin: 0 auto;
+	height: 464px;
+	width: 482px;
+}
+.wp-container-4.wp-block-columns.suggestions-columns {
+	gap: 10em;
+}
+.suggestions-image {
+	height: 320px;
+	width: 481px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.suggestions-heading {
+	margin: 15px 0;
+}
+.product_price {
+	font-family: "Montserrat";
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 45px;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: #273c2c;
+}
+
+/* .products-category-container {
+	background-color: #7f9172;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+} /*
+ 
+
+
+.product-category-block {
+	border: 1px solid pink;
+	height: 464px;
+	width: 482px;
+	overflow: hidden;
+}
+
+.product-category-image {
+	height: 330px;
+	width: 482px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.products-category-container > div {
+	border: 1px solid white;
+	width: 75vw;
+} */
 
 /* footer */
 

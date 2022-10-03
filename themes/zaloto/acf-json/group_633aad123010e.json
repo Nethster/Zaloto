@@ -1,6 +1,6 @@
 {
     "key": "group_633aad123010e",
-    "title": "Product category",
+    "title": "Suggestions",
     "fields": [
         {
             "key": "field_633aae90c1536",
@@ -89,7 +89,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/product-category"
+                "value": "acf\/suggestions"
             }
         ]
     ],
@@ -102,5 +102,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1664790944
+    "modified": 1664819497
 }
