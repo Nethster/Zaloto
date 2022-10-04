@@ -620,6 +620,18 @@ footer ul.menu a {
 	align-items: center;
 }
 
+.search-result {
+	display: flex;
+	padding: 10px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.search-result hr {
+	width: 50vw;
+}
+
 /*Media queries */
 @media only screen and (max-width: 1000px) {
 	h1 {
