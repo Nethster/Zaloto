@@ -3,12 +3,18 @@
 
 get_header();
 
+
+
+
+the_content();
+
+
 query_posts(array(
     'post_type' => 'stores'
 )); ?>
 
 
-<div class="stores">
+<div class="store-container">
 
     <?php
     while (have_posts()) : the_post(); ?>
