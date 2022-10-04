@@ -19,15 +19,6 @@ add_theme_support('custom-background', array(
 ));
 
 
-// Add support for custom logo
-add_theme_support('custom-logo', array(
-  'height' => 50,
-  'width' => 50,
-  'flex-height' => true,
-  'flex-width' => true,
-));
-
-
 
 //nav menus
 register_nav_menus(array(

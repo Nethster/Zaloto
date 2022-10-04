@@ -481,7 +481,7 @@ header .menu > * {
 }
 
 /* Contact form */
-#wpforms-323 {
+#wpforms-302 {
 	font-family: "Montserrat", sans-serif;
 	display: flex;
 	flex-direction: column;
@@ -491,9 +491,9 @@ header .menu > * {
 }
 
 /* Input fields & Textarea */
-#wpforms-323-field_0,
-#wpforms-323-field_2,
-#wpforms-323-field_1-container input {
+#wpforms-302-field_0,
+#wpforms-302-field_2,
+#wpforms-302-field_1-container input {
 	background: #fcfcfc;
 	border: 1px solid #d9d9d9;
 	border-radius: 5px;
@@ -505,7 +505,7 @@ div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
 }
 
 /* Submit btn */
-#wpforms-submit-323 {
+#wpforms-submit-302 {
 	height: 37px;
 	width: 161px;
 	text-transform: uppercase;
@@ -822,4 +822,25 @@ footer ul.menu a {
 		color: #273c2c;
 		width: 70vw;
 	}
+}
+
+/* woocommerce pages styling */
+div.woocommerce {
+	width: 100%;
+	margin: auto;
+}
+
+.woo-title {
+	text-align: center;
+	margin: 30px;
+}
+
+/* cart page */
+.woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
+.woocommerce a.button.alt:hover {
+	background-color: darkgreen;
+	color: white;
+	border-radius: 0;
+	text-transform: uppercase;
+	font-family: "Montserrat", sans-serif;
 }

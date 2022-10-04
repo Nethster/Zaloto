@@ -3,6 +3,12 @@ get_header();
 
 
 ?>
+
+<?php
+the_content();
+
+?>
+
 <div class="search-content-container">
 
     <div class="search-field">
