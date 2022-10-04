@@ -1,4 +1,4 @@
-byyye
+
 <?php
 
 
@@ -17,7 +17,7 @@ if( $terms ): ?>
     <?php endforeach; ?>
     </ul>
 <?php endif; ?>
-HEHH
+
 <?php
 var_dump($term);
 

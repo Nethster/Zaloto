@@ -135,13 +135,13 @@ function my_acf_init_block_types()
       'keywords'          => array('hero'),
     ));
     acf_register_block_type(array(
-      'name'              => 'product category',
-      'title'             => __('Product category'),
-      'description'       => __('A custom product category block.'),
-      'render_template'   => 'template-parts/blocks/product-category.php',
+      'name'              => 'suggestions',
+      'title'             => __('Suggestions'),
+      'description'       => __('A custom suggestions block.'),
+      'render_template'   => 'template-parts/blocks/suggestions.php',
       'category'          => 'formatting',
       'icon'              => 'welcome-view-site',
-      'keywords'          => array('product-category'),
+      'keywords'          => array('suggestions'),
     ));
   }
 }

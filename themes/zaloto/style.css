@@ -28,6 +28,12 @@ h1 {
 	font-size: 40px;
 	line-height: 50px;
 }
+h2 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 35px;
+}
 p,
 a,
 small {
@@ -42,9 +48,14 @@ body {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+	overflow-x: hidden;
 }
 
 /*Navbar styling*/
+.toggle-nav {
+	font-size: 2rem;
+	display: none;
+}
 header {
 	position: absolute;
 	display: flex;
@@ -253,7 +264,7 @@ header .menu > * {
 	padding: 20px 0;
 	max-width: 80%;
 }
-.highlight-block .product_price {
+.highlight-block .highlight_product_price {
 	color: #7f9172;
 }
 
@@ -274,10 +285,11 @@ header .menu > * {
 	overflow: hidden;
 	padding: 90px 120px;
 }
-.collections-block-heading {
+.block-heading {
 	width: 480px;
 	padding-bottom: 80px;
 }
+
 .collections-container {
 	position: relative;
 	margin: 0 auto;
@@ -295,11 +307,6 @@ header .menu > * {
 }
 
 .collection-heading {
-	font-family: "Montserrat", sans-serif;
-	font-size: 24px;
-	font-weight: 600;
-	line-height: 35px;
-	letter-spacing: 0.03em;
 	margin: 10px 0;
 }
 .collection-button {
@@ -408,8 +415,8 @@ header .menu > * {
 	width: 775px;
 	padding: 30px 0;
 }
-
-.products-category-container {
+/*Suggestions styling*/
+.suggestions-block-container {
 	background-color: #7f9172;
 	color: white;
 	display: flex;
@@ -417,15 +424,100 @@ header .menu > * {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
+	height: 100vh;
 	overflow: hidden;
 }
-.heading-txt {
-	height: 128px;
-	width: 580px;
-	padding: 95px 145px;
+
+.suggestions-block-heading {
+	width: 650px;
+	padding-bottom: 80px;
 }
-.product-category-block {
-	object-fit: contain;
+.suggestions-container {
+	margin: 0 auto;
+	height: 464px;
+	width: 482px;
+}
+.wp-container-4.wp-block-columns.suggestions-columns {
+	gap: 10em;
+}
+
+.suggestions-image {
+	height: 320px;
+	width: 481px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.suggestions-heading {
+	margin: 15px 0;
+}
+.product_price {
+	font-family: "Montserrat";
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 45px;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: #273c2c;
+}
+/*Contact page*/
+.contact-container {
+	width: 50%;
+	display: flex;
+	margin: 0 auto;
+	flex-direction: column;
+	align-items: center;
+}
+.contact-heading {
+	padding: 50px;
+}
+
+.contact-container p {
+	padding-bottom: 50px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+/* Contact form */
+#wpforms-323 {
+	font-family: "Montserrat", sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 120px;
+}
+
+/* Input fields & Textarea */
+#wpforms-323-field_0,
+#wpforms-323-field_2,
+#wpforms-323-field_1-container input {
+	background: #fcfcfc;
+	border: 1px solid #d9d9d9;
+	border-radius: 5px;
+	padding: 25px;
+}
+div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
+	height: 150px;
+	padding: 35px;
+}
+
+/* Submit btn */
+#wpforms-submit-323 {
+	height: 37px;
+	width: 161px;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 14px;
+	color: #ffffff;
+	background: #7f9172;
+	float: right;
+}
+
+.wp-container-6.wp-block-columns.suggestions-columns {
+	gap: 10em;
 }
 
 /* footer */
@@ -529,4 +621,118 @@ footer ul.menu a {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+/*Media queries */
+@media only screen and (max-width: 1000px) {
+	h1 {
+		font-size: 30px;
+		line-height: 40px;
+	}
+	body {
+		overflow-x: hidden;
+	}
+	header .menu-wrapper,
+	.menu-item,
+	.cart-menu {
+		display: none;
+	}
+
+	.zaloto-logo {
+		width: 100%;
+	}
+
+	.menu-header {
+		display: inline-block;
+		position: relative;
+		margin: 0;
+		width: 100%;
+	}
+
+	.intro-block {
+		width: 90vw;
+		height: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.intro-block-container {
+		overflow: hidden;
+	}
+	.highlight-block-container {
+		margin: 0 auto;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.highlight-image {
+		height: 450px;
+		width: 450px;
+		margin-top: 20px;
+	}
+	.highlight-block > p {
+		display: none;
+	}
+	.highlight-block {
+		height: 450px;
+	}
+	.highlight-link .highlight-button {
+		padding: 20px 10px;
+	}
+	.highlight-block {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	.collections-block-container {
+		padding: 50px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.article-container {
+		width: 100%;
+		height: 100%;
+		padding: 50px;
+	}
+	/*About us*/
+	.mini-hero-block img {
+		object-fit: cover;
+	}
+	.about-page-content {
+		text-align: center;
+		overflow-x: hidden;
+	}
+	.about-txt-block {
+		width: 80%;
+		height: 100%;
+	}
+	.suggestions-block-container {
+		height: 100%;
+	}
+	.wp-container-4.wp-block-columns.suggestions-columns {
+		gap: 2em;
+	}
+
+	.footer-wrapper {
+		height: 100%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+	}
+	.footer-container {
+		align-items: center;
+		margin: 0 auto;
+		padding: 0;
+		flex-direction: column;
+	}
+	.menu-wrapper,
+	.menu-item {
+		display: block;
+	}
 }
