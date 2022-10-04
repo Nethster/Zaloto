@@ -757,3 +757,21 @@ div.woocommerce {
 	text-transform: uppercase;
 	font-family: "Montserrat", sans-serif;
 }
+
+/*stores page */
+
+.store-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.single-store {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 30px;
+	border: solid 1px black;
+	padding: 15px;
+}
