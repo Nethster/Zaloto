@@ -184,6 +184,9 @@ function add_woocommerce_support()
 
 add_action('after_setup_theme', 'add_woocommerce_support');
 
+// remove woocommerce sidebar
+remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
+
 
 //custom post type for stores
 
@@ -257,3 +260,24 @@ function custom_post_type()
 }
 add_action('init', 'custom_post_type', 0);
 /* Custom Post Type End */
+
+
+// unset all buttons on my account
+function remove_tabs_my_account($items)
+{
+  unset($items['dashboard']);
+  unset($items['orders']);
+  unset($items['downloads']);
+  unset($items['edit-address']);
+  unset($items['payment-methods']);
+  unset($items['edit-account']);
+  unset($items['customer-logout']);
+  return $items;
+}
+
+add_filter('woocommerce_account_menu_items', 'remove_tabs_my_account', 999);
+
+// adding relevant tabs to my account
+add_action('woocommerce_account_dashboard',  'woocommerce_account_orders');
+add_action('woocommerce_account_dashboard',  'woocommerce_account_edit_address');
+add_action('woocommerce_account_dashboard',  'woocommerce_account_edit_account');
