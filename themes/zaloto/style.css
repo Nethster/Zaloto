@@ -632,23 +632,6 @@ footer ul.menu a {
 	body {
 		overflow-x: hidden;
 	}
-	.toggle-nav {
-		font-size: 2rem;
-		display: block;
-	}
-	a.toggle-nav {
-		margin: 0 0 0.5em 0.5em;
-		display: inline-block !important;
-		color: #fff;
-		transition: color linear 0.15s;
-	}
-
-	a.toggle-nav:hover,
-	a.toggle-nav:active {
-		text-decoration: none;
-		color: #273c2c;
-	}
-
 	header .menu-wrapper,
 	.menu-item,
 	.cart-menu {
@@ -664,26 +647,6 @@ footer ul.menu a {
 		position: relative;
 		margin: 0;
 		width: 100%;
-	}
-
-	#access .menu-header ul {
-		display: none;
-		position: absolute;
-		top: 80%;
-		right: 0px;
-		min-width: 200px;
-		background-color: #7b3d84;
-		font-size: 1.2em;
-	}
-
-	#access .menu-header li {
-		display: block;
-		float: none;
-		padding-right: 2%;
-		text-align: right;
-	}
-	#access ul li:hover > ul {
-		display: none;
 	}
 
 	.intro-block {
@@ -734,5 +697,42 @@ footer ul.menu a {
 		width: 100%;
 		height: 100%;
 		padding: 50px;
+	}
+	/*About us*/
+	.mini-hero-block img {
+		object-fit: cover;
+	}
+	.about-page-content {
+		text-align: center;
+		overflow-x: hidden;
+	}
+	.about-txt-block {
+		width: 80%;
+		height: 100%;
+	}
+	.suggestions-block-container {
+		height: 100%;
+	}
+	.wp-container-4.wp-block-columns.suggestions-columns {
+		gap: 2em;
+	}
+
+	.footer-wrapper {
+		height: 100%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+	}
+	.footer-container {
+		align-items: center;
+		margin: 0 auto;
+		padding: 0;
+		flex-direction: column;
+	}
+	.menu-wrapper,
+	.menu-item {
+		display: block;
 	}
 }
