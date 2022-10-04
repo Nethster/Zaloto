@@ -319,3 +319,11 @@ function bbloomer_add_cart_quantity_plus_minus()
         
    ");
 }
+/*Change proceed to checkout button text */
+function woocommerce_button_proceed_to_checkout()
+{ ?>
+  <a href="<?php echo esc_url(wc_get_checkout_url()); ?>" class="checkout-button button alt wc-forward">
+    <?php esc_html_e('Checkout', 'woocommerce'); ?>
+  </a>
+<?php
+}
