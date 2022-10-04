@@ -735,4 +735,22 @@ footer ul.menu a {
 	.menu-item {
 		display: block;
 	}
+
+	/*Contact page */
+	.contact-container {
+		width: 90%;
+	}
+	.suggestions-block-container {
+		height: 100%;
+		margin: 0 auto;
+		padding-bottom: 20px;
+	}
+	.suggestions-block-container > div {
+		width: 80%;
+		overflow: hidden;
+	}
+	.suggestions-block-container p {
+		color: #273c2c;
+		width: 70vw;
+	}
 }
