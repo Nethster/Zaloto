@@ -12,4 +12,5 @@
     <h1><?php the_field('product_title'); ?></h1>
     <p><?php the_field('product_description'); ?></p>
     <small class="product_price"><?php the_field('product_price'); ?></small>
+
 </div>

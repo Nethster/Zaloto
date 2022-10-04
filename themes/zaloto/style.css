@@ -1,5 +1,5 @@
 /*
-Theme Name: Zaloto!
+Theme Name: zaloto!
 Theme URI: https://github.com/tidythemes/blankslate
 Author: TidyThemes
 Author URI: http://tidythemes.com/
@@ -129,8 +129,8 @@ header .menu > * {
 
 .index-post-heading {
 	background-color: #273c2c;
-	height: 40vh;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	text-align: center;

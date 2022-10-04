@@ -31,7 +31,7 @@ add_theme_support('custom-logo', array(
 
 //nav menus
 register_nav_menus(array(
-  'my-custom-menu', __('My Custom Menu'),
+  'my-custom-menu' => __('My Custom Menu'),
   'footer-menu' => __('Footer Menu', 'zaloto'),
 ));
 
@@ -54,6 +54,8 @@ function bbloomer_free_shipping_cart_notice()
     wc_print_notice($notice, 'notice');
   }
 }
+
+
 
 // ACF blocks
 
@@ -86,16 +88,6 @@ function my_acf_init_block_types()
     ));
 
     acf_register_block_type(array(
-      'name'              => 'postblock',
-      'title'             => ('postblock'),
-      'description'       => ('A custom postblock.'),
-      'render_template'   => 'template-parts/blocks/postblock.php',
-      'category'          => 'formatting',
-      'icon'              => 'admin-customizer',
-      'keywords'          => array('postblock'),
-    ));
-
-    acf_register_block_type(array(
       'name'              => 'highlight',
       'title'             => ('Highlight'),
       'description'       => ('A custom highlight block.'),
@@ -113,6 +105,17 @@ function my_acf_init_block_types()
       'icon'              => 'welcome-view-site',
       'keywords'          => array('collections'),
     ));
+
+    acf_register_block_type(array(
+      'name'              => 'Categories',
+      'title'             => __('Categories'),
+      'description'       => __('A custom categories block.'),
+      'render_template'   => 'template-parts/blocks/categories.php',
+      'category'          => 'formatting',
+      'icon'              => 'admin-customizer',
+      'keywords'          => array('categories'),
+    ));
+
     acf_register_block_type(array(
       'name'              => 'stores',
       'title'             => __('Store'),
