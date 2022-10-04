@@ -520,6 +520,75 @@ div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
 	gap: 10em;
 }
 
+/*Cart styling*/
+
+.cart-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.cart-container > div.cart-title > h1 {
+	margin: 15vh 0 5vh;
+}
+.cart-container > form {
+	/* background-color: pink; */
+	width: 80%;
+}
+
+.cart-container table.shop_table td {
+	border: none;
+	padding: 0;
+}
+.cart-container table.shop_table {
+	border: none;
+	width: 100%;
+}
+.cart-container table.shop_table td {
+	/* border-bottom: 1px solid #c4c4c4; */
+	padding: 0;
+}
+tr:nth-child(3) > td {
+	border-bottom: none;
+}
+
+td.product-thumbnail {
+	width: 120px;
+	height: 111px;
+	background-color: #ccc;
+}
+#add_payment_method table.cart img,
+.woocommerce-cart table.cart img,
+.woocommerce-checkout table.cart img {
+	width: 100%;
+}
+
+.product-flex {
+	display: flex;
+	flex-direction: column;
+	margin-left: 15px;
+}
+td.product > div > a {
+	font-weight: 600;
+	text-decoration: none;
+	color: #353434;
+}
+td.product > div > p > a {
+	font-weight: 400;
+	font-size: 14px;
+	text-decoration: none;
+	color: #c4c4c4;
+}
+td.product > div > span > bdi {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 25px;
+	color: #617c7c;
+}
 /* footer */
 
 .footer-wrapper {
