@@ -865,14 +865,14 @@ footer ul.menu a {
 #s {
 	margin-left: 100px;
 	height: 40px;
-	width: 600px;
+	width: 750px;
 	display: block;
 }
 #searchsubmit {
 	background-color: #617c7c;
 	color: #ffffff;
 	height: 30px;
-	width: 130px;
+	width: 200px;
 	margin-bottom: 200px;
 	border: none;
 	margin-left: 320px;
@@ -890,18 +890,14 @@ footer ul.menu a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-left: 400px;
-	font-size: 16px;
-	width: 600px;
+	margin-left: 625px;
+	font-size: 14px;
+	width: 400px;
 	margin-top: -200px;
 	padding-bottom: 15px;
 }
 
-.search-result hr {
-	width: 700px;
-}
-
-.search-title {
+.search-page-title {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -910,11 +906,11 @@ footer ul.menu a {
 	margin-left: 40px;
 }
 
-.looking {
+.search-text {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-left: -340px;
+	margin-right: 430px;
 	font-size: 14px;
 	margin-top: 140px;
 }
@@ -923,9 +919,9 @@ footer ul.menu a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding-bottom: 20px;
+	margin-left: -363px;
+	padding-bottom: 15px;
 	font-size: 11px;
-	margin-right: 575px;
 	color: #617c7c;
 }
 
