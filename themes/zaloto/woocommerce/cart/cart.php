@@ -44,16 +44,16 @@ do_action('woocommerce_before_cart'); ?>
                 ?>
                         <tr class="woocommerce-cart-form__cart-item <?php echo esc_attr(apply_filters('woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key)); ?>">
 
-                            <td class="product-thumbnail">
-                                <?php
-                                $thumbnail = apply_filters('woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key);
-                                echo $thumbnail; // PHPCS: XSS ok.
+                            <td class="product-thumbnail" style="background-image: url('<?php echo get_the_post_thumbnail_url($product_id); ?>')">
+                                <!-- <?php
+                                        $thumbnail = apply_filters('woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key);
+                                        echo $thumbnail; // PHPCS: XSS ok.
 
-                                // if (!$product_permalink) {
-                                // } else {
-                                //     printf('<a href="%s">%s</a>', esc_url($product_permalink), $thumbnail); // PHPCS: XSS ok.
-                                // }
-                                ?>
+                                        // if (!$product_permalink) {
+                                        // } else {
+                                        //     printf('<a href="%s">%s</a>', esc_url($product_permalink), $thumbnail); // PHPCS: XSS ok.
+                                        // }
+                                        ?> -->
                             </td>
 
                             <td class="product" data-title="<?php esc_attr_e('Product', 'woocommerce'); ?>">
