@@ -64,6 +64,10 @@ header {
 	justify-content: space-between;
 	width: 100%;
 	padding: 10px 0;
+	/* background-color: pink; */
+}
+body > div.page-title > h2 {
+	visibility: hidden;
 }
 
 header a {
@@ -1057,4 +1061,18 @@ div.woocommerce {
 
 .woocommerce .page-title {
 	display: none;
+}
+
+/*Remove qty arrows */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+	-moz-appearance: textfield;
 }
