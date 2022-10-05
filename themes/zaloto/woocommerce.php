@@ -3,12 +3,12 @@ get_header();
 ?>
 
 
-<div class="categories-header">
+<div class="other_categories_header">
 <?php if (is_product_category()){
-    $current_category_object = get_queried_object();
-   echo  $current_category_object->name;
-   echo  $current_category_object->description;
-
+    $current_category_object = get_queried_object();?>
+   <h1><?php echo  $current_category_object->name;?></h1>
+   <p><?php echo  $current_category_object->description;?></p>
+<?php
 }?>
 </div>
 <?php
