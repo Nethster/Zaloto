@@ -1214,15 +1214,6 @@ div.woocommerce {
 	margin: 30px;
 }
 
-/* cart page */
-.woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
-.woocommerce a.button.alt:hover {
-	background-color: darkgreen;
-	color: white;
-	border-radius: 0;
-	text-transform: uppercase;
-	font-family: "Montserrat", sans-serif;
-}
 
 /*stores page */
 
