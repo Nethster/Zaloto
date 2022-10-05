@@ -25,8 +25,6 @@ the_content();
                         <?php the_title(); ?></a>
                 </h2>
                 <p><?php the_excerpt(); ?></p>
-                <hr>
-
             </div>
         <?php endwhile; ?>
     <?php else : ?>

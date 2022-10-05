@@ -12,6 +12,7 @@ get_header();
 }
     
     ?>
+</div>
 
 <?php woocommerce_content(); ?>
 
