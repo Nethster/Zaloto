@@ -366,7 +366,7 @@ add_action('woocommerce_account_dashboard',  'woocommerce_account_edit_account')
 
 
 
-// display two columns with products instead of three 
+// display four columns with products to make the image size not be TOO abhorrent.
 add_filter('loop_shop_columns', 'loop_columns', 999);
 if (!function_exists('loop_columns')) {
   function loop_columns()
@@ -378,3 +378,6 @@ if (!function_exists('loop_columns')) {
 
 // remove all sorting options from pages
 remove_action('woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30);
+
+// remove shop page title
+add_filter('woocommerce_show_page_title', '__return_false');
