@@ -3,6 +3,12 @@ get_header();
 
 
 ?>
+
+<?php
+the_content();
+
+?>
+
 <div class="search-content-container">
 
     <div class="search-field">
@@ -19,6 +25,8 @@ get_header();
                         <?php the_title(); ?></a>
                 </h2>
                 <p><?php the_excerpt(); ?></p>
+                <hr>
+
             </div>
         <?php endwhile; ?>
     <?php else : ?>

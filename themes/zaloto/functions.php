@@ -19,15 +19,6 @@ add_theme_support('custom-background', array(
 ));
 
 
-// Add support for custom logo
-add_theme_support('custom-logo', array(
-  'height' => 50,
-  'width' => 50,
-  'flex-height' => true,
-  'flex-width' => true,
-));
-
-
 
 //nav menus
 register_nav_menus(array(
@@ -196,6 +187,9 @@ function add_woocommerce_support()
 
 add_action('after_setup_theme', 'add_woocommerce_support');
 
+// remove woocommerce sidebar
+remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
+
 
 //custom post type for stores
 
@@ -268,4 +262,93 @@ function custom_post_type()
   register_post_type('stores', $args);
 }
 add_action('init', 'custom_post_type', 0);
-  /* Custom Post Type End */
+/* Custom Post Type End */
+
+
+
+
+
+
+
+
+// Quantity buttons for woocommerce
+// 1. Show plus minus buttons
+
+add_action('woocommerce_after_quantity_input_field', 'bbloomer_display_quantity_plus');
+
+function bbloomer_display_quantity_plus()
+{
+  echo '<button type="button" class="plus">+</button>';
+}
+
+add_action('woocommerce_before_quantity_input_field', 'bbloomer_display_quantity_minus');
+
+function bbloomer_display_quantity_minus()
+{
+  echo '<button type="button" class="minus">-</button>';
+}
+
+// 2. Trigger update quantity script
+
+add_action('wp_footer', 'bbloomer_add_cart_quantity_plus_minus');
+
+function bbloomer_add_cart_quantity_plus_minus()
+{
+
+  if (!is_product() && !is_cart()) return;
+
+  wc_enqueue_js("   
+           
+      $(document).on( 'click', 'button.plus, button.minus', function() {
+  
+         var qty = $( this ).parent( '.quantity' ).find( '.qty' );
+         var val = parseFloat(qty.val());
+         var max = parseFloat(qty.attr( 'max' ));
+         var min = parseFloat(qty.attr( 'min' ));
+         var step = parseFloat(qty.attr( 'step' ));
+ 
+         if ( $( this ).is( '.plus' ) ) {
+            if ( max && ( max <= val ) ) {
+               qty.val( max ).change();
+            } else {
+               qty.val( val + step ).change();
+            }
+         } else {
+            if ( min && ( min >= val ) ) {
+               qty.val( min ).change();
+            } else if ( val > 1 ) {
+               qty.val( val - step ).change();
+            }
+         }
+ 
+      });
+        
+   ");
+}
+/*Change proceed to checkout button text */
+function woocommerce_button_proceed_to_checkout()
+{ ?>
+  <a href="<?php echo esc_url(wc_get_checkout_url()); ?>" class="checkout-button button alt wc-forward">
+    <?php esc_html_e('Checkout', 'woocommerce'); ?>
+  </a>
+<?php
+}
+// unset all buttons on my account
+function remove_tabs_my_account($items)
+{
+  unset($items['dashboard']);
+  unset($items['orders']);
+  unset($items['downloads']);
+  unset($items['edit-address']);
+  unset($items['payment-methods']);
+  unset($items['edit-account']);
+  unset($items['customer-logout']);
+  return $items;
+}
+
+add_filter('woocommerce_account_menu_items', 'remove_tabs_my_account', 999);
+
+// adding relevant tabs to my account
+add_action('woocommerce_account_dashboard',  'woocommerce_account_orders');
+add_action('woocommerce_account_dashboard',  'woocommerce_account_edit_address');
+add_action('woocommerce_account_dashboard',  'woocommerce_account_edit_account');
