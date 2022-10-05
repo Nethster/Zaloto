@@ -121,8 +121,17 @@ body > div.page-title > h2 {
 
 /* Woocommerce message */
 .woocommerce-notices-wrapper {
-    margin-top: 30px;
-    /* display: none; */
+	margin-top: 30px;
+	/* display: none; */
+}
+.single-product .woocommerce-notices-wrapper {
+	margin-top: 60px;
+}
+.woocommerce-message {
+	border-top-color: #7f9172;
+}
+.woocommerce-message::before {
+	color: #7f9172;
 }
 
 header a {
