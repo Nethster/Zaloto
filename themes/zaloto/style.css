@@ -693,6 +693,10 @@ footer ul.menu a {
 	margin-bottom: 50px;
 }
 
+.page-template-default .navwrapper header{
+color: black;
+}
+
 
 /*Media queries */
 @media only screen and (max-width: 1000px) {
