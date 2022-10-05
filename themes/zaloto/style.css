@@ -623,6 +623,39 @@ footer ul.menu a {
 	align-items: center;
 }
 
+/* other_categories in category page*/
+
+.other_categories{
+	background-color: #7f9172;
+}
+
+.other_categories ul {
+	display: flex;
+    justify-content: space-evenly;
+	
+}
+
+.other_categories li{
+	list-style: none;
+}
+
+.other_categories li .categories_content{
+	margin: 30px;
+	align-items: center;
+	color:#ffffff
+
+}
+.other_categories li .categories_content a {
+	text-decoration: none;
+	color: #273c2c;
+}
+
+.categories-header{
+	height: 390px;
+	background-color: #273c2c;
+}
+
+
 /*Media queries */
 @media only screen and (max-width: 1000px) {
 	h1 {
