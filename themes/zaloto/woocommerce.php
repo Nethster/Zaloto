@@ -2,6 +2,7 @@
 get_header();
 ?>
 
+<<<<<<< HEAD
 
 <?php if (is_product_category()){?>
     <div class="other_categories_header">
@@ -10,12 +11,14 @@ get_header();
    <p><?php echo  $current_category_object->description;?></p>
 <?php
 }?>
+
+
 </div>
 <?php
 
-woocommerce_content(); 
+woocommerce_content();
 
-if (is_product_category()){
+if (is_product_category()) {
     get_template_part("/template-parts/blocks/categories");
 }
 
