@@ -378,3 +378,6 @@ if (!function_exists('loop_columns')) {
 
 // remove all sorting options from pages
 remove_action('woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30);
+
+// remove shop page title
+add_filter('woocommerce_show_page_title', '__return_false');

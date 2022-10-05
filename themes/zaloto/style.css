@@ -1127,8 +1127,6 @@ div.woocommerce {
 
 /*stores page */
 
-/* .store-container maximum 3 columns */
-
 .store-wrapper {
 	display: flex;
 	flex-direction: column;
@@ -1138,7 +1136,6 @@ div.woocommerce {
 
 .store-wrapper h1 {
 	margin-bottom: 30px;
-	
 }
 
 .store-container {
@@ -1190,4 +1187,9 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type="number"] {
 	-moz-appearance: textfield;
+}
+
+/* remove shop title from shop page */
+.woocommerce-products-header__title {
+	display: none;
 }
