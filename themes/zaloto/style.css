@@ -757,6 +757,22 @@ div.woocommerce {
 	margin: 30px;
 }
 
+.woocommerce .page-title {
+	display: none;
+}
+
+.woocommerce .woocommerce-result-count {
+	display: none;
+}
+
+.woocommerce .products {
+	padding-top: 15px;
+}
+
+.woocommerce-account .the-title {
+	display: none;
+}
+
 /* cart page */
 .woocommerce-cart .wc-proceed-to-checkout a.checkout-button,
 .woocommerce a.button.alt:hover {

@@ -281,3 +281,11 @@ add_filter('woocommerce_account_menu_items', 'remove_tabs_my_account', 999);
 add_action('woocommerce_account_dashboard',  'woocommerce_account_orders');
 add_action('woocommerce_account_dashboard',  'woocommerce_account_edit_address');
 add_action('woocommerce_account_dashboard',  'woocommerce_account_edit_account');
+
+
+//removing all woocommerce styling
+
+// unset default sorting option on shop page
+remove_action('woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30);
+
+/* add_filter('woocommerce_enqueue_styles', '__return_empty_array'); */
