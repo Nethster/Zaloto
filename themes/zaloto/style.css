@@ -961,6 +961,7 @@ footer ul.menu a {
 	.mini-hero-block img {
 		object-fit: cover;
 	}
+
 	.about-page-content {
 		text-align: center;
 		overflow-x: hidden;
@@ -1055,6 +1056,16 @@ div.woocommerce {
 
 /* test comment */
 
-.woocommerce .page-title {
+.woocommerce h1 {
 	display: none;
 }
+
+ul.products .columns-3 img {
+	width: 150px !important;
+	height: 200px !important;
+	object-fit: cover;
+}
+
+/* hide default sorting on shop page */
+
+

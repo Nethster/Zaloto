@@ -266,7 +266,17 @@ add_action('init', 'custom_post_type', 0);
 
 
 
+// remove related products
+remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20);
 
+function woo_remove_product_tabs($tabs)
+{
+  unset($tabs['additional_information']);      // Remove the additional information tab
+  unset($tabs['reviews']);             // Remove the reviews tab
+
+  return $tabs;
+}
+add_filter('woocommerce_product_tabs', 'woo_remove_product_tabs', 60);
 
 
 
@@ -352,3 +362,19 @@ add_filter('woocommerce_account_menu_items', 'remove_tabs_my_account', 999);
 add_action('woocommerce_account_dashboard',  'woocommerce_account_orders');
 add_action('woocommerce_account_dashboard',  'woocommerce_account_edit_address');
 add_action('woocommerce_account_dashboard',  'woocommerce_account_edit_account');
+
+
+
+
+// display two columns with products instead of three 
+add_filter('loop_shop_columns', 'loop_columns', 999);
+if (!function_exists('loop_columns')) {
+  function loop_columns()
+  {
+    return 4;
+  }
+}
+
+
+// remove all sorting options from pages
+remove_action('woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30);
