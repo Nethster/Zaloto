@@ -520,7 +520,6 @@ div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
 	gap: 10em;
 }
 
-<<<<<<< HEAD
 /*Cart styling*/
 
 .cart-container {
@@ -709,43 +708,6 @@ tr.cart-subtotal > td > span > bdi {
 .cart-collaterals > div > h2 {
 	display: none;
 }
-=======
-/* .products-category-container {
-	background-color: #7f9172;
-	color: white;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 100vh;
-	overflow: hidden;
-} /*
- 
-
-
-.product-category-block {
-	border: 1px solid pink;
-	height: 464px;
-	width: 482px;
-	overflow: hidden;
-}
-
-.product-category-image {
-	height: 330px;
-	width: 482px;
-	overflow: hidden;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.products-category-container > div {
-	border: 1px solid white;
-	width: 75vw;
-} */
-
->>>>>>> 981adac9a34bdaf157470ac68e0b18ceff56ded7
 /* footer */
 
 .footer-wrapper {
