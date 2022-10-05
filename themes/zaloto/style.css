@@ -1068,6 +1068,7 @@ footer ul.menu a {
 	.mini-hero-block img {
 		object-fit: cover;
 	}
+
 	.about-page-content {
 		text-align: center;
 		overflow-x: hidden;
@@ -1144,7 +1145,7 @@ div.woocommerce {
 
 /* test comment */
 
-.woocommerce .page-title {
+.woocommerce h1 {
 	display: none;
 }
 
