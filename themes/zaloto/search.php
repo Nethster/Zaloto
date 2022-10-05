@@ -4,38 +4,38 @@ get_header();
 
 ?>
 
-<?php
-the_content();
 
-?>
 
-<div class="search-content-container">
+<div class="search-title"> <?php the_title(); ?> </div>
+<h2 class="search-heading">SEARCH</h2>
+<p class="looking">What are you looking for? </p>
 
-    <div class="search-field">
+<div class="search-container">
+    <div class="search-form">
         <?php get_search_form(); ?>
     </div>
-
 
     <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
             <div class="search-result">
-                <h2>
-                    <a href="<?php the_permalink(); ?>">
-                        <?php the_post_thumbnail('thumbnail') ?>
-                        <?php the_title(); ?></a>
-                </h2>
-                <p><?php the_excerpt(); ?></p>
+
+
+                <span><?php the_excerpt(); ?></span>
             </div>
+            <a class="result-button" href="<?php the_permalink(); ?>"> VIEW COLLECTION</a>
+
+            <hr>
+
         <?php endwhile; ?>
     <?php else : ?>
+
+
         <div class="search-result">
-            <h2><?php _e('Sorry, no posts matched your criteria.'); ?></h2>
+            <h2> <?php _e('No results matched your criteria'); ?></h2>
         </div>
+
     <?php endif; ?>
-
 </div>
-
-
 
 <?php
 get_footer();
