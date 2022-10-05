@@ -614,14 +614,22 @@ div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
 	width: 100%;
 }
 
+/*cart product images */
 td.product-thumbnail {
 	width: 120px;
 	height: 111px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
 }
+
 #add_payment_method table.cart img,
 .woocommerce-cart table.cart img,
 .woocommerce-checkout table.cart img {
 	width: 100%;
+	height: auto;
+	display: block;
+	max-width: 100%;
 }
 
 .product-flex {
@@ -781,6 +789,7 @@ tr.cart-subtotal > td > span > bdi {
 .cart-collaterals > div > h2 {
 	display: none;
 }
+
 /* footer */
 
 .footer-wrapper {
