@@ -64,7 +64,6 @@ header {
 	justify-content: space-between;
 	width: 100%;
 	padding: 10px 0;
-	/* background-color: pink; */
 }
 body > div.page-title > h2 {
 	visibility: hidden;
@@ -593,6 +592,10 @@ td.product-quantity > div > button {
 	background: #bfc7c7;
 	position: relative;
 }
+td.product-quantity > div > button:hover {
+	background: #7f9172;
+	color: #fff;
+}
 
 .woocommerce .quantity .qty {
 	width: 1em;
@@ -604,6 +607,7 @@ td.product-quantity > div > button {
 	line-height: 35px;
 	letter-spacing: 0.03em;
 }
+
 .product-quantity {
 	width: 100px;
 }
