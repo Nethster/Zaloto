@@ -1,0 +1,12 @@
+2022-10-04T09:03:27+00:00 CRITICAL syntax error, unexpected 'get_field' (T_STRING) in C:\wamp64\www\zaloto\wp-content\themes\zaloto\functions.php on line 209
+
+2022-10-04T09:09:30+00:00 CRITICAL syntax error, unexpected '}', expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in C:\wamp64\www\zaloto\wp-content\themes\zaloto\functions.php on line 243
+
+2022-10-04T09:13:42+00:00 CRITICAL syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in C:\wamp64\www\zaloto\wp-content\themes\zaloto\functions.php on line 316
+
+2022-10-04T09:13:46+00:00 CRITICAL syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in C:\wamp64\www\zaloto\wp-content\themes\zaloto\functions.php on line 316
+
+2022-10-04T09:15:12+00:00 CRITICAL syntax error, unexpected end of file in C:\wamp64\www\zaloto\wp-content\themes\zaloto\functions.php on line 318
+
+2022-10-04T09:15:42+00:00 CRITICAL syntax error, unexpected end of file in C:\wamp64\www\zaloto\wp-content\themes\zaloto\functions.php on line 319
+

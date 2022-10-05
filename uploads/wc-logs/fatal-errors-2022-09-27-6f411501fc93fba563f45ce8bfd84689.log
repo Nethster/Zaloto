@@ -1,0 +1,2 @@
+2022-09-27T12:54:38+00:00 CRITICAL Cannot redeclare wpdocs_custom_excerpt_length() (previously declared in C:\wamp64\www\zaloto\wp-content\themes\zaloto\functions.php:44) in C:\wamp64\www\zaloto\wp-content\themes\zaloto\functions.php on line 110
+

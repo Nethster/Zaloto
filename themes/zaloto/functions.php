@@ -46,6 +46,8 @@ function bbloomer_free_shipping_cart_notice()
   }
 }
 
+
+
 // ACF blocks
 
 add_action('acf/init', 'my_acf_init_block_types');
@@ -77,16 +79,6 @@ function my_acf_init_block_types()
     ));
 
     acf_register_block_type(array(
-      'name'              => 'postblock',
-      'title'             => ('postblock'),
-      'description'       => ('A custom postblock.'),
-      'render_template'   => 'template-parts/blocks/postblock.php',
-      'category'          => 'formatting',
-      'icon'              => 'admin-customizer',
-      'keywords'          => array('postblock'),
-    ));
-
-    acf_register_block_type(array(
       'name'              => 'highlight',
       'title'             => ('Highlight'),
       'description'       => ('A custom highlight block.'),
@@ -104,6 +96,17 @@ function my_acf_init_block_types()
       'icon'              => 'welcome-view-site',
       'keywords'          => array('collections'),
     ));
+
+    acf_register_block_type(array(
+      'name'              => 'Categories',
+      'title'             => __('Categories'),
+      'description'       => __('A custom categories block.'),
+      'render_template'   => 'template-parts/blocks/categories.php',
+      'category'          => 'formatting',
+      'icon'              => 'admin-customizer',
+      'keywords'          => array('categories'),
+    ));
+
     acf_register_block_type(array(
       'name'              => 'stores',
       'title'             => __('Store'),
@@ -262,6 +265,74 @@ add_action('init', 'custom_post_type', 0);
 /* Custom Post Type End */
 
 
+
+
+
+
+
+
+// Quantity buttons for woocommerce
+// 1. Show plus minus buttons
+
+add_action('woocommerce_after_quantity_input_field', 'bbloomer_display_quantity_plus');
+
+function bbloomer_display_quantity_plus()
+{
+  echo '<button type="button" class="plus">+</button>';
+}
+
+add_action('woocommerce_before_quantity_input_field', 'bbloomer_display_quantity_minus');
+
+function bbloomer_display_quantity_minus()
+{
+  echo '<button type="button" class="minus">-</button>';
+}
+
+// 2. Trigger update quantity script
+
+add_action('wp_footer', 'bbloomer_add_cart_quantity_plus_minus');
+
+function bbloomer_add_cart_quantity_plus_minus()
+{
+
+  if (!is_product() && !is_cart()) return;
+
+  wc_enqueue_js("   
+           
+      $(document).on( 'click', 'button.plus, button.minus', function() {
+  
+         var qty = $( this ).parent( '.quantity' ).find( '.qty' );
+         var val = parseFloat(qty.val());
+         var max = parseFloat(qty.attr( 'max' ));
+         var min = parseFloat(qty.attr( 'min' ));
+         var step = parseFloat(qty.attr( 'step' ));
+ 
+         if ( $( this ).is( '.plus' ) ) {
+            if ( max && ( max <= val ) ) {
+               qty.val( max ).change();
+            } else {
+               qty.val( val + step ).change();
+            }
+         } else {
+            if ( min && ( min >= val ) ) {
+               qty.val( min ).change();
+            } else if ( val > 1 ) {
+               qty.val( val - step ).change();
+            }
+         }
+ 
+      });
+        
+   ");
+}
+/*Change proceed to checkout button text */
+function woocommerce_button_proceed_to_checkout()
+{ ?>
+  <a href="<?php echo esc_url(wc_get_checkout_url()); ?>" class="checkout-button button alt wc-forward">
+    <?php esc_html_e('Checkout', 'woocommerce'); ?>
+  </a>
+<?php
+}
 // unset all buttons on my account
 function remove_tabs_my_account($items)
 {
