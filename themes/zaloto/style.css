@@ -119,6 +119,11 @@ body > div.page-title > h2 {
 	fill: #353434;
 }
 
+/* Woocommerce message */
+.woocommerce-notices-wrapper {
+    margin-top: 30px;
+    /* display: none; */
+}
 
 header a {
 	color: white;
