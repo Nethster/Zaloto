@@ -718,8 +718,72 @@ footer ul.menu a {
 	margin-bottom: 50px;
 }
 
-.page-template-default .navwrapper header {
+/*My account page*/
+
+.woocommerce .woocommerce-MyAccount-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 100px;
+	margin-bottom: 90px;
+	margin-left: 15%;
+	float: none;
+	max-width: 70%;
+	
+} 
+.woocommerce table.shop_table{
+	margin-top: 90px;
+	max-width: 80%;
+}
+
+.woocommerce table.shop_table a{
+	color: #7f9172;
+	text-decoration: none;
+}
+
+
+.woocommerce .u-column1.col-1.woocommerce-Address{
+background-color: aquamarine;
+
+margin-top: 90px;
+
+}
+
+
+.woocommerce-MyAccount-content header.woocommerce-Address-title.title{
+    /* margin-top: 40px; */
+    max-width: 20%;
+	margin-left: 80px;
+	background-color: blueviolet;
+}
+
+.woocommerce-MyAccount-content header.woocommerce-Address-title.title a{
+	color:#7f9172
+}
+
+
+.woocommerce .woocommerce-MyAccount-navigation{
+background-color: aquamarine;
+display: flex;
+justify-content: center;
+}
+
+.woocommerce .woocommerce-MyAccount-navigation{
 	color: black;
+}
+
+.woocommerce .woocommerce-EditAccountForm{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 80%;
+	margin-top: 100px;
+	
+}
+
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button{
+	margin-top: 20px;
 }
 
 
